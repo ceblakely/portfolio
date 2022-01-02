@@ -1,12 +1,21 @@
 <head>
   <link rel="stylesheet" href="/home.css" type="text/css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Questrial&display=swap"
+    rel="stylesheet"
+  />
 </head>
 <body>
   <div id="main">
-    <%- include('../partials/nav.ejs'); %>
+    <%- include('../partials/nav.ejs') %>
     <div id="content">
-      <%- include ('../partials/about.ejs') %> <%-
-      include('../partials/articles.ejs'); %>
+      <%- include ('../partials/about.ejs') %> <%- include
+      ('../partials/projects.ejs') %> <%- include('../partials/articles.ejs');
+      %>
     </div>
   </div>
 </body>

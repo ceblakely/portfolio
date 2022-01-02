@@ -9,19 +9,11 @@ color scheme:
 #fffbfe
 
 */
-@media (min-width: 600px) {
+@media only screen and (min-width: 320px) {
   body {
     margin: 0;
     padding: 0;
     overflow-x: hidden;
-    background-color: #fbc9c4;
-  }
-  nav {
-    display: none;
-  }
-  #main {
-    display: flex;
-    flex-direction: row;
   }
   #content {
     display: flex;
@@ -30,8 +22,100 @@ color scheme:
     align-items: center;
   }
   #about {
+    text-align: center;
     height: 100vh;
+    background-image: linear-gradient(
+      340deg,
+      #8ae5c2,
+      #e9bcac,
+      #fbc9c4,
+      #f9948a
+    );
   }
+  h1 {
+    font-family: "Questrial", sans-serif;
+    font-size: 6em;
+    color: #af291e;
+    text-align: center;
+    margin-bottom: 0;
+  }
+  h2 {
+    font-family: "Questrial", sans-serif;
+    font-size: 1.7rem;
+    color: #0e402d;
+    text-align: center;
+    margin: 0;
+  }
+  h4 {
+    font-family: "Roboto Slab", serif;
+    font-size: 1rem;
+    line-height: 1.5rem;
+    text-align: center;
+    padding-left: 10%;
+    padding-right: 10%;
+  }
+  #contact {
+    display: none;
+  }
+  #projects {
+    background-color: #d1d5de;
+  }
+  #articles {
+    background-color: #fbc9c4;
+  }
+  #projects,
+  #articles {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100vw;
+    text-align: center;
+    font-family: "Roboto Slab", serif;
+  }
+  #projectsRow1,
+  #articlesRow1,
+  #articlesRow2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  img {
+    max-width: 95vw;
+    width: 100%;
+    height: auto;
+  }
+  figcaption {
+    font-size: 1.2em;
+    padding: 1%;
+  }
+  figcaption a {
+    color: black;
+    text-decoration: none;
+  }
+  footer,
+  #links {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #000000;
+    color: #25a775;
+  }
+  footer h5,
+  footer p a {
+    font-family: "Questrial", sans-serif;
+    font-size: 1.2em;
+    color: #25a775;
+    text-decoration: none;
+  }
+  p {
+    padding-left: 10%;
+  }
+  p a:hover {
+    color: #8ae5c2;
+  }
+}
+@media only screen and (min-width: 768px) {
   h1 {
     font-family: "Questrial", sans-serif;
     font-size: 9em;
@@ -49,72 +133,28 @@ color scheme:
     font-size: 1.2rem;
     line-height: 2rem;
     text-align: center;
-    padding-right: 15%;
-    padding-left: 20%;
   }
   #contact {
     text-align: center;
   }
-  button {
-    font-size: 1rem;
-    background-color: transparent;
-    padding: 2%;
-    border-radius: 10%;
+  #contact h5 {
+    font-family: "Roboto Slab", serif;
+    font-size: 1.2rem;
   }
-  button a {
+  #contact h5 a {
     color: #0e402d;
     text-decoration: none;
-  }
-
-  #articles {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    width: 100vw;
-    text-align: center;
-  }
-  #projectsRow1,
-  #articlesRow1,
-  #articlesRow2 {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
   }
   img {
     max-width: 40vw;
     width: 100%;
     height: auto;
   }
-  figcaption a {
-    color: black;
-    text-decoration: none;
-  }
-}
-@media (min-width: 768px) {
-  nav {
-    display: flex;
-    flex-direction: row;
-    position: fixed;
-    background-color: #010b14;
-    width: 8vw;
-    height: 100vh;
-    padding-left: 1%;
-  }
-  nav h2 {
-    color: #af291e;
-  }
-  nav h3 a {
-    color: #fffbfe;
-    text-decoration: none;
-  }
-  nav h3 a:hover {
-    color: #68edc6;
-  }
   #projectsRow1,
   #articlesRow1,
   #articlesRow2 {
     display: flex;
     flex-direction: row;
-    justify-content: flex-end;
+    justify-content: center;
   }
 }

@@ -29,6 +29,7 @@
       #d7bbf4,
       #bbbefe
     );
+    padding-bottom: 2%;
   }
   #col1 {
     display: flex;
@@ -60,7 +61,7 @@
     font-size: 10vw;
     color: #151515;
     margin: 0;
-    padding-top: 3%;
+    margin-top: 10%;
   }
   h3 {
     font-family: "Questrial", sans-serif;
@@ -81,7 +82,16 @@
     padding-left: 1%;
   }
   #main p {
-    display: none;
+    font-family: "Questrial", sans-serif;
+    font-style: normal;
+    font-size: 2.5vw;
+    text-align: center;
+    background-color: #151515;
+    color: #bbbefe;
+    position: fixed;
+    padding: 2%;
+    margin: 0;
+    width: 100%;
   }
 
   h4 {
@@ -110,6 +120,7 @@
     justify-content: center;
     width: 100vw;
     text-align: center;
+    padding-bottom: 2%;
   }
   #projectsRow1,
   #articlesRow1,
@@ -130,7 +141,8 @@
   figcaption {
     font-family: "Roboto Slab", serif;
     font-size: 15px;
-    padding: 1%;
+    padding-top: 1%;
+    padding-bottom: 3%;
   }
   figcaption a {
     color: black;

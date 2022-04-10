@@ -2,26 +2,14 @@
   <link rel="stylesheet" href="/home.css" type="text/css" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link
-    href="https://fonts.googleapis.com/css2?family=Questrial&display=swap"
-    rel="stylesheet"
-  />
-  <link
-    href="https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap"
+    href="https://fonts.googleapis.com/css2?family=Bodoni+Moda&display=swap"
     rel="stylesheet"
   />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
 </head>
 <body>
-  <div id="main">
-    <p>Exciting user experiences developed with security in mind.</p>
-    <div id="content">
-      <%- include ('../partials/about.ejs') %> <%- include
-      ('../partials/projects.ejs') %> <%- include('../partials/articles.ejs');
-      %>
-    </div>
-    <%- include('../partials/footer.ejs') %>
-  </div>
+  <%- include('../partials/intro.ejs') %> <%-
+  include('../partials/projects.ejs') %> <%- include('../partials/process.ejs')
+  %> <%- include('../partials/contact.ejs'); %>
 </body>

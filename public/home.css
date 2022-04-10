@@ -4,164 +4,29 @@
     padding: 0;
     overflow-x: hidden;
   }
-  #content {
+  #logo {
+    max-width: 50vw;
+    width: 100%;
+    height: auto;
+    text-align: center;
+  }
+  #projects img {
+    max-width: 60vw;
+    width: 100%;
+    height: auto;
+  }
+  #projectsRow1 {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
   }
-  #about {
-    display: flex;
-    flex-direction: column;
-    width: 100vw;
-    background-image: radial-gradient(
-      circle,
-      #fbc9c4,
-      #fbc9c4,
-      #fbc9c4,
-      #fbc9c4,
-      #fbc9c4,
-      #fcc6c7,
-      #fdc3ca,
-      #fcc1ce,
-      #f7bdd9,
-      #eabbe7,
-      #d7bbf4,
-      #bbbefe
-    );
-    padding-bottom: 2%;
-  }
-  #col1 {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    text-align: center;
-    width: 100vw;
-  }
-  #col2 {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    flex-wrap: wrap;
-    width: 100vw;
-    height: inherit;
-  }
-  #row1,
-  #row2 {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-  }
-
-  h1 {
-    font-family: "Questrial", sans-serif;
-    text-align: center;
-    font-size: 10vw;
-    color: #151515;
-    margin: 0;
-    margin-top: 10%;
-  }
-  h3 {
-    font-family: "Questrial", sans-serif;
-    font-size: 20px;
-    font-style: normal;
-    text-align: center;
-    margin: 0;
-    padding: 2%;
-  }
-  ul {
-    width: 70vw;
-  }
-
-  #contact img {
-    max-width: 6vw;
-    width: 100%;
-    height: auto;
-    padding-left: 1%;
-  }
-  #main p {
-    font-family: "Questrial", sans-serif;
-    font-style: normal;
-    font-size: 2.5vw;
-    text-align: center;
-    background-color: #151515;
-    color: #bbbefe;
-    position: fixed;
-    padding: 2%;
-    margin: 0;
-    width: 100%;
-  }
-
-  h4 {
-    font-family: "Questrial", sans-serif;
-    font-size: 25px;
-    line-height: 1.5rem;
-    text-align: center;
-    text-decoration: underline;
-  }
-  li {
-    font-family: "Roboto Slab", serif;
-    text-align: left;
-    list-style-type: circle;
-    font-size: 15px;
-  }
-  #projects {
-    background-color: #d1d5de;
-  }
-  #articles {
-    background-color: #bbbefe;
-  }
-  #projects,
-  #articles {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    width: 100vw;
-    text-align: center;
-    padding-bottom: 2%;
-  }
-  #projectsRow1,
-  #articlesRow1,
-  #articlesRow2 {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-  }
-  figure {
-    margin: 0;
-  }
-  img {
-    max-width: 90vw;
-    width: 100%;
-    height: auto;
-  }
-
   figcaption {
-    font-family: "Roboto Slab", serif;
-    font-size: 15px;
-    padding-top: 1%;
-    padding-bottom: 3%;
-  }
-  figcaption a {
-    color: black;
-    text-decoration: none;
-  }
-  footer {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
     text-align: center;
-    background-color: #151515;
   }
-  footer h5,
-  #links p a {
-    font-family: "Questrial", sans-serif;
-    font-size: 1.2em;
-    color: #bbbefe;
-    text-decoration: none;
+  h2,
+  h3 {
+    text-align: center;
   }
 }
 @media (min-width: 768px) {
@@ -170,154 +35,52 @@
     padding: 0;
     overflow-x: hidden;
   }
-  #about {
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    height: inherit;
-    width: 100vw;
-
-    background-image: radial-gradient(
-      circle,
-      #fbc9c4,
-      #fbc9c4,
-      #fbc9c4,
-      #fbc9c4,
-      #fbc9c4,
-      #fcc6c7,
-      #fdc3ca,
-      #fcc1ce,
-      #f7bdd9,
-      #eabbe7,
-      #d7bbf4,
-      #bbbefe
-    );
-  }
-
-  #main p {
-    font-family: "Questrial", sans-serif;
-    font-style: normal;
-    font-size: 17px;
-    text-align: center;
-    background-color: #151515;
-    color: #bbbefe;
-    position: fixed;
-    padding: 1%;
-    margin: 0;
-    width: 100%;
-  }
-  h1 {
-    font-family: "Questrial", sans-serif;
-    text-align: center;
-    font-size: 10vw;
-    color: #151515;
-    margin-bottom: 1%;
-  }
-  h3 {
-    font-family: "Questrial", sans-serif;
-    font-size: 25px;
-    font-style: normal;
-    text-align: center;
-    padding: 2px;
-    margin: 0;
-    margin-bottom: 1%;
-  }
-  #col1 {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    text-align: center;
-  }
-  #col2 {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: flex-start;
-    flex-wrap: wrap;
-  }
-  #row1,
-  #row2 {
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-  }
-  ul {
-    width: 35vw;
-  }
-  li {
-    font-family: "Roboto Slab", serif;
-    text-align: left;
-    list-style-type: circle;
-    font-size: 17px;
-  }
-
-  #contact img {
-    max-width: 3vw;
+  #logo {
+    max-width: 50vw;
     width: 100%;
     height: auto;
-    padding-left: 1%;
-  }
-  h4 {
-    font-family: "Questrial", sans-serif;
-    font-size: 25px;
-    line-height: 1.5rem;
     text-align: center;
-    text-decoration: underline;
   }
-
-  img {
+  #introCol2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  #introCol2 h3 {
+    font-family: "Bodoni Moda", serif;
+    width: 40vw;
+  }
+  #servicesImg {
     max-width: 40vw;
     width: 100%;
     height: auto;
   }
-  #projects {
-    background-color: #d1d5de;
-    width: 100vw;
+
+  #projects img {
+    max-width: 35vw;
+    width: 100%;
+    height: auto;
   }
-  #articles {
-    background-color: #bbbefe;
-    width: 100vw;
-  }
-  #projectsRow1,
-  #articlesRow1,
-  #articlesRow2 {
+  #projectsRow1 {
     display: flex;
     flex-direction: row;
     justify-content: center;
+    align-items: center;
   }
   figcaption {
-    font-family: "Roboto Slab", serif;
-    font-size: 15px;
-    padding: 1%;
-  }
-  figcaption a {
-    color: black;
-    text-decoration: none;
-  }
-  footer {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
     text-align: center;
-    background-color: #151515;
-    width: 100vw;
   }
-  #links {
+  #process div {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
   }
-  footer h5,
-  #links p a {
-    font-family: "Questrial", sans-serif;
-    font-size: 1.2em;
-    color: #bbbefe;
-    text-decoration: none;
+  h2,
+  h3 {
+    text-align: center;
   }
-  #links p {
-    padding-left: 3%;
-    padding-right: 3%;
+  p {
+    font-family: "Bodoni Moda", serif;
+    width: 60%;
   }
 }
 @media (min-width: 992px) {

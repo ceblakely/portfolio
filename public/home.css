@@ -28,7 +28,7 @@
     width: 100%;
     height: auto;
   }
-  #projects img {
+  #projectsDiv img {
     max-width: 60vw;
     width: 100%;
     height: auto;
@@ -61,6 +61,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    height: 100vh;
   }
   #logo {
     max-width: 80vw;
@@ -91,9 +92,12 @@
     width: 100%;
     height: auto;
   }
-
-  #projects img {
-    max-width: 35vw;
+  #projectsDiv {
+    background-color: #eacdb7;
+    border: 2px solid black;
+  }
+  #projectsDiv img {
+    max-width: 20vw;
     width: 100%;
     height: auto;
   }
@@ -106,9 +110,15 @@
   figcaption {
     text-align: center;
   }
+  #process {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
   #process div {
     display: flex;
     flex-direction: column;
+    margin-top: 3%;
   }
 
   h3 {
@@ -118,8 +128,10 @@
     font-size: 35px;
     text-align: center;
   }
-  h4 {
-    font-size: 30px;
+  #process img {
+    max-width: 15vw;
+    width: 100%;
+    height: auto;
     margin-left: 10%;
     padding: 0;
   }
@@ -129,6 +141,33 @@
   }
   #process p {
     margin-left: 30%;
+  }
+  #contactDiv {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #d3aad0;
+    border: 2px solid black;
+  }
+  footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    background-color: #483c3b;
+  }
+  footer p a {
+    color: #eacdb7;
+    text-decoration: none;
+  }
+  footer p a:hover {
+    color: #ed6b60;
+    text-decoration: underline;
+  }
+  #footerLogo {
+    max-width: 40vw;
+    width: 100%;
+    height: auto;
   }
 }
 @media (min-width: 992px) {

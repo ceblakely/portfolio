@@ -2,7 +2,7 @@
   body {
     margin: 0;
     padding: 0;
-    overflow-x: hidden;
+    overflow-x: hidden !important;
   }
   #logo {
     max-width: 90vw;
@@ -28,34 +28,112 @@
     width: 100%;
     height: auto;
   }
+  #projectsDiv {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #eacdb7;
+    border: 2px solid black;
+  }
   #projectsDiv img {
     max-width: 60vw;
     width: 100%;
     height: auto;
   }
-  #projectsRow1 {
+
+  figcaption {
+    text-align: center;
+  }
+  #processDiv {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
   }
-  figcaption {
-    text-align: center;
+  #processDiv div img {
+    max-width: 22vw;
+    width: 100%;
+    height: auto;
+    padding: 0;
+    margin: 0;
   }
-  h2,
-  h3 {
-    text-align: center;
-  }
-  p {
+
+  #introDiv h3 {
     font-family: "Bodoni Moda", serif;
+    text-align: center;
     width: 75vw;
+  }
+  #processDiv p {
+    font-family: "Bodoni Moda", serif;
+    margin-left: 0;
+    width: 80vw;
+  }
+  #contactDiv {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #d3aad0;
+    border: 2px solid black;
+  }
+  #contactDiv p {
+    font-family: "Bodoni Moda", serif;
+    width: 60vw;
+  }
+  form label {
+    font-family: "Bodoni Moda", serif;
+  }
+  form input {
+    width: 70vw;
+  }
+  form button {
+    padding: 2%;
+    margin-top: 2%;
+    border-radius: 5%;
+  }
+  form button a {
+    color: black;
+    text-decoration: none;
+  }
+  #message {
+    height: 100px;
+  }
+  footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #483c3b;
+  }
+  footer p a {
+    color: #eacdb7;
+    text-decoration: none;
+  }
+  footer p a:hover {
+    color: #ed6b60;
+    text-decoration: underline;
+  }
+  #footerLogo {
+    max-width: 70vw;
+    width: 100%;
+    height: auto;
+  }
+  .titleImg {
+    max-width: 30vw;
+    width: 100%;
+    height: auto;
+    padding-top: 3%;
+    padding-bottom: 3%;
   }
 }
 @media (min-width: 768px) {
   body {
     margin: 0;
     padding: 0;
-    overflow-x: hidden;
+    max-width: 100%;
+    width: 100%;
+    overflow-x: hidden !important;
   }
   #introDiv {
     display: flex;
@@ -95,6 +173,9 @@
   #projectsDiv {
     background-color: #eacdb7;
     border: 2px solid black;
+    max-width: 100%;
+    width: 100%;
+    height: auto;
   }
   #projectsDiv img {
     max-width: 20vw;
@@ -107,41 +188,44 @@
     justify-content: center;
     align-items: center;
   }
+  figcaption a {
+    color: black;
+    text-decoration: none;
+  }
   figcaption {
     text-align: center;
   }
-  #process {
+  #projectsDiv,
+  #processDiv {
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
+    max-width: 100%;
+    width: 100%;
+    height: auto;
+    padding-bottom: 3%;
   }
-  #process div {
-    display: flex;
-    flex-direction: column;
-    margin-top: 3%;
-  }
-
-  h3 {
-    text-align: center;
-  }
-  h2 {
-    font-size: 35px;
-    text-align: center;
-  }
-  #process img {
-    max-width: 15vw;
+  #processDiv div img {
+    max-width: 18vw;
     width: 100%;
     height: auto;
     margin-left: 10%;
-    padding: 0;
+    padding-top: 3%;
   }
-  p {
+  #processDiv p {
     font-family: "Bodoni Moda", serif;
     width: 60%;
+    margin-left: 25%;
+    text-align: left;
   }
-  #process p {
-    margin-left: 30%;
+  #introDiv p {
+    font-family: "Bodoni Moda", serif;
+    width: 60%;
+    margin: 0;
+    text-align: center;
   }
+
   #contactDiv {
     display: flex;
     flex-direction: column;
@@ -149,12 +233,40 @@
     align-items: center;
     background-color: #d3aad0;
     border: 2px solid black;
+    max-width: 100%;
+    width: 100%;
+    height: auto;
+  }
+  form {
+    padding-top: 2%;
+  }
+  form label {
+    font-family: "Bodoni Moda", serif;
+  }
+  form input {
+    width: 40vw;
+  }
+  form button {
+    padding: 2%;
+    margin-top: 2%;
+    border-radius: 5%;
+  }
+  form button a {
+    color: black;
+    text-decoration: none;
+  }
+  #message {
+    height: 100px;
   }
   footer {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
+    align-items: center;
     background-color: #483c3b;
+    max-width: 100%;
+    width: 100%;
+    height: auto;
   }
   footer p a {
     color: #eacdb7;
@@ -168,6 +280,13 @@
     max-width: 40vw;
     width: 100%;
     height: auto;
+  }
+  .titleImg {
+    max-width: 25vw;
+    width: 100%;
+    height: auto;
+    padding-top: 3%;
+    padding-bottom: 1%;
   }
 }
 @media (min-width: 992px) {

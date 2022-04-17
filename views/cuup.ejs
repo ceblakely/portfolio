@@ -66,6 +66,7 @@
         don’t compromise comfort, fit, or aesthetic. Founded by Kearnon O'Molony
         and Abby Morgan, CUUP is headquartered in New York
       </p>
+      <img class="standard" src="images/cuupImgs/moodboard.png" />
     </div>
     <div>
       <h4>Relevant Facts</h4>
@@ -112,7 +113,27 @@
     <div id="userPersonas">
       <h4>User Personas</h4>
       <p></p>
-      <div></div>
+      <div id="personasContainer">
+        <a class="userBackBtn" onclick="plusSlides(this, -1)">&#10094;</a>
+        <div class="userSlide fade">
+          <p class="numbertext">1/3</p>
+          <img class="user" src="images/cuupImgs/persona1.png" />
+        </div>
+        <div class="userSlide fade">
+          <p class="numbertext">2/3</p>
+          <img class="user" src="images/cuupImgs/persona2.png" />
+        </div>
+        <div class="userSlide fade">
+          <p class="numbertext">3/3</p>
+          <img class="user" src="images/cuupImgs/persona 3.png" />
+        </div>
+        <a class="userNextBtn" onclick="plusSlides(this, 1)">&#10095;</a>
+      </div>
+    </div>
+    <div>
+      <span class="userDot" onclick="currentSlide(1)"></span>
+      <span class="userDot" onclick="currentSlide(2)"></span>
+      <span class="userDot" onclick="currentSlide(3)"></span>
     </div>
   </div>
 
@@ -132,5 +153,13 @@
         website, and number of repeat customers.
       </p>
     </div>
+    <div>
+      <h4>Design Strategy</h4>
+      <p></p>
+    </div>
+    <div>
+      <h4></h4>
+    </div>
   </div>
+  <script src="process.js"></script>
 </body>

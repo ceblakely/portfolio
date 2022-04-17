@@ -11,12 +11,12 @@ app.use(express.static(path.join(__dirname, "static")));
 app.get("/", (req, res) => {
   res.render("home");
 });
-app.get("/cuupProcess", (req, res) => {
-  res.render("cuupProcess");
+app.get("/cuup", (req, res) => {
+  res.render("cuup");
 });
 
-app.get("/dvstyProcess", (req, res) => {
-  res.render("dvstyProcess");
+app.get("/dvsty", (req, res) => {
+  res.render("dvsty");
 });
 
 app.listen(process.env.PORT || 5000, "0.0.0.0");

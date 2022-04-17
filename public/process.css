@@ -33,17 +33,23 @@
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
+    height: 100vh;
   }
 
-  p,
-  li {
-    width: 60vw;
+  #introDiv p,
+  #introDiv li {
+    width: 45vw;
     font-family: "Bodoni Moda", serif;
   }
+  p,
   li {
+    width: 65vw;
     font-family: "Bodoni Moda", serif;
   }
   .empathyMap {
+    width: 60vw;
+  }
+  .user {
     width: 60vw;
   }
   #brandResearch,
@@ -53,5 +59,72 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+  }
+  #personasContainer {
+    position: relative;
+    margin: 0;
+  }
+  .userDot {
+    text-align: center;
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    text-align: center;
+    transition: background-color 0.6s ease;
+  }
+  .userBackBtn,
+  .userNextBtn,
+  .mockupBackBtn,
+  .mockupNextBtn {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: #ed6b60;
+    font-weight: bold;
+    font-size: 40px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+  }
+  .userNextBtn,
+  .mockupNextBtn {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  .active,
+  .userDot:hover {
+    background-color: #717171;
+  }
+  .fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+  @-webkit-keyframes fade {
+    from {
+      opacity: 0.4;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  @keyframes fade {
+    from {
+      opacity: 0.4;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  .userSlide {
+    display: none;
   }
 }

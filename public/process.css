@@ -5,7 +5,82 @@
     overflow-x: hidden !important;
   }
   #logo {
-    max-width: 35vw;
+    max-width: 85vw;
+    width: 100%;
+    height: auto;
+  }
+  nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  #introDiv,
+  #brandResearch,
+  #userResearch,
+  #uiDesign {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  #introDiv p,
+  #introDiv li,
+  p,
+  li {
+    width: 80vw;
+    font-family: "Bodoni Moda", serif;
+  }
+  .empathyMap {
+    width: 60vw;
+  }
+  .standard {
+    width: 90vw;
+  }
+  .smallMockup {
+    max-width: 80vw;
+    width: 100%;
+    height: auto;
+    border: 5px solid black;
+    border-radius: 10px;
+    margin: 1%;
+  }
+  .largeMockup {
+    max-width: 80vw;
+    width: 100%;
+    height: auto;
+    border: 5px solid black;
+    border-radius: 10px;
+  }
+  .design {
+    max-width: 90vw;
+    width: 100%;
+    height: auto;
+  }
+  #progressDesigns {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #000000;
+    padding-top: 3%;
+    padding-bottom: 3%;
+  }
+  footer p a {
+    color: #ffffff;
+    text-decoration: none;
+  }
+  footer p a:hover {
+    text-decoration: underline;
+  }
+  #footerLogo {
+    max-width: 70vw;
     width: 100%;
     height: auto;
   }
@@ -18,6 +93,7 @@
     width: 100%;
     overflow-x: hidden !important;
   }
+
   #logo {
     max-width: 35vw;
     width: 100%;
@@ -46,11 +122,40 @@
     width: 65vw;
     font-family: "Bodoni Moda", serif;
   }
+  #progressDesigns {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: flex-start;
+  }
+  .largeMockup {
+    max-width: 80vw;
+    width: 100%;
+    height: auto;
+    border: 5px solid black;
+    border-radius: 10px;
+  }
   .empathyMap {
     width: 60vw;
   }
-  .user {
-    width: 60vw;
+  .standard {
+    width: 70vw;
+  }
+  .smallMockup {
+    max-width: 40vw;
+    width: 100%;
+    height: auto;
+    border: 5px solid black;
+    border-radius: 10px;
+    margin: 1%;
+  }
+  .design {
+    width: 90vw;
+  }
+  .sectionTitle {
+    max-width: 27vw;
+    width: 100%;
+    height: auto;
   }
   #brandResearch,
   #userResearch,
@@ -126,5 +231,29 @@
   }
   .userSlide {
     display: none;
+  }
+  footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: #000000;
+    max-width: 100%;
+    width: 100%;
+    height: auto;
+    padding-top: 3%;
+    padding-bottom: 3%;
+  }
+  footer p a {
+    color: #ffffff;
+    text-decoration: none;
+  }
+  footer p a:hover {
+    text-decoration: underline;
+  }
+  #footerLogo {
+    max-width: 40vw;
+    width: 100%;
+    height: auto;
   }
 }

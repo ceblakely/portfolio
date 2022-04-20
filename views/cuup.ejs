@@ -11,7 +11,9 @@
 </head>
 <body>
   <nav>
-    <a href="/"><img id="logo" src="images/homeImages/BD Logo.png" /></a>
+    <a href="/"
+      ><img id="logo" src="images/homeImages/BD Logo Large Red.png"
+    /></a>
   </nav>
 
   <div id="introDiv">
@@ -56,7 +58,8 @@
   </div>
 
   <div id="brandResearch">
-    <h2>Brand Research</h2>
+    <img class="sectionTitle" src="images/homeImages/brandResearch.png" />
+    <!-- <h2>Brand Research</h2> -->
     <div>
       <h4>Brand History</h4>
       <p>
@@ -66,7 +69,7 @@
         don’t compromise comfort, fit, or aesthetic. Founded by Kearnon O'Molony
         and Abby Morgan, CUUP is headquartered in New York
       </p>
-      <img class="standard" src="images/cuupImgs/moodboard.png" />
+      <!-- <img class="standard" src="images/cuupImgs/cuup30.jpg" /> -->
     </div>
     <div>
       <h4>Relevant Facts</h4>
@@ -87,19 +90,34 @@
   </div>
 
   <div id="userResearch">
-    <h2>User Experience Research</h2>
+    <img class="sectionTitle" src="images/homeImages/uxResearch.png" />
+    <!-- <h2>User Experience Research</h2> -->
     <div id="targetAudience">
       <h4>Target Audience</h4>
       <p>
         CUUP's target audience primarily include people that want to enhance
         their confidence and femininity by investing in understated, but
-        stylish, undergarments. ***REVISE THIS****There are a number of barriers
-        to purchase that potential customers could be facing: The media channels
-        CUUP advertises in are not reaching our target customers. Our target
-        customers do not know what differentiates CUUP from any other bra. The
-        target customer would prefer to go to a store and try on a bra to ensure
-        the correct size is purchased.
+        stylish, undergarments.
       </p>
+
+      <p>
+        There are a number of barriers that potential customers in our target
+        audience could be facing that is preventing brand engagement:
+      </p>
+      <ol>
+        <li>
+          The media channels CUUP advertises in are not reaching our target
+          customers.
+        </li>
+        <li>
+          Our target customers do not know what differentiates CUUP from any
+          other bra.
+        </li>
+        <li>
+          The target customer would prefer to go to a store and try on a bra to
+          ensure the correct size is purchased.
+        </li>
+      </ol>
     </div>
     <div id="empathyMaps">
       <h4>Aggregated Empathy Map</h4>
@@ -117,15 +135,15 @@
         <a class="userBackBtn" onclick="plusSlides(this, -1)">&#10094;</a>
         <div class="userSlide fade">
           <p class="numbertext">1/3</p>
-          <img class="user" src="images/cuupImgs/persona1.png" />
+          <img class="standard" src="images/cuupImgs/Persona 1 Updated.png" />
         </div>
         <div class="userSlide fade">
           <p class="numbertext">2/3</p>
-          <img class="user" src="images/cuupImgs/persona2.png" />
+          <img class="standard" src="images/cuupImgs/persona2.png" />
         </div>
         <div class="userSlide fade">
           <p class="numbertext">3/3</p>
-          <img class="user" src="images/cuupImgs/persona 3.png" />
+          <img class="standard" src="images/cuupImgs/persona 3.png" />
         </div>
         <a class="userNextBtn" onclick="plusSlides(this, 1)">&#10095;</a>
       </div>
@@ -138,7 +156,8 @@
   </div>
 
   <div id="uiDesign">
-    <h2>Interface Design</h2>
+    <img class="sectionTitle" src="images/homeImages/uiDesign.png" />
+    <!-- <h2>Interface Design</h2> -->
     <div>
       <p>
         It was important for this website redesign to not appear like too
@@ -146,20 +165,43 @@
         palette is black and white, with the exception of the color in the
         images. This minimalist color palette makes sense for a bra company that
         focuses on the only the essential features that make for a supportive
-        bra, but I found that adding different shades of white and grey allowed
-        for the product images to pop more. Giving the website more personality
-        allows us to better showcase the Spring and Summer Collections, which
-        allows us to meet our objectives of increasing sales, time on the
-        website, and number of repeat customers.
+        bra, but I found that adding a warmer shade of white allowed for the
+        Spring & Summer Collection product images to pop more.
       </p>
+      <p>
+        The chosen fonts for this website redesign were Inter for the headings
+        and Habibi for the paragraphs, links, and buttons. Habibi is highly
+        elegant and classic serif font that reflects CUUP's commitment to an
+        understated and quality product. Inder complements Habibi by being
+        highly legible and designed for the online reader.
+      </p>
+      <img class="standard" src="images/cuupImgs/CUUP Color & Font.png" />
     </div>
+
     <div>
       <h4>Design Strategy</h4>
-      <p></p>
+      <p>
+        It was important to have an understanding of what the goals of the
+        project were in order to design to solve that problem.
+      </p>
+      <img class="standard" src="images/cuupImgs/Design Strategy Didot.png" />
     </div>
+
     <div>
-      <h4></h4>
+      <h4>Progression of Desktop Design</h4>
+      <div id="progressDesigns">
+        <img class="smallMockup" src="images/cuupImgs/Home Desktop - 1.png" />
+        <img class="smallMockup" src="images/cuupImgs/Home Desktop - 2.png" />
+      </div>
+      <h4>Final Desktop Design</h4>
+      <img class="largeMockup" src="images/cuupImgs/CUUP Desktop copy.png" />
+    </div>
+
+    <div>
+      <h4>Mobile Design</h4>
+      <img class="design" src="images/cuupImgs/CUUP Mobile Final.png" />
     </div>
   </div>
+  <%- include('../partials/footer.ejs') %>
   <script src="process.js"></script>
 </body>

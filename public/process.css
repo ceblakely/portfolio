@@ -3,11 +3,27 @@
     margin: 0;
     padding: 0;
     overflow-x: hidden !important;
+    box-sizing: border-box;
   }
-  #logo {
-    max-width: 85vw;
-    width: 100%;
-    height: auto;
+  h1 {
+    font-size: 50px;
+    font-family: linotype-didot-headline, serif;
+    font-weight: 400;
+    font-style: normal;
+    margin: 0;
+  }
+  h1 a {
+    color: black;
+    text-decoration: none;
+  }
+  h2 {
+    font-size: 40px;
+    font-family: linotype-didot-headline, serif;
+    font-weight: 400;
+    font-style: normal;
+    padding-top: 5%;
+    margin: 0;
+    text-decoration: underline;
   }
   nav {
     display: flex;
@@ -18,7 +34,8 @@
   #introDiv,
   #brandResearch,
   #userResearch,
-  #uiDesign {
+  #uiDesign,
+  #progressDesigns {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -31,9 +48,7 @@
     width: 80vw;
     font-family: "Bodoni Moda", serif;
   }
-  .empathyMap {
-    width: 60vw;
-  }
+
   .standard {
     width: 90vw;
   }
@@ -57,32 +72,129 @@
     width: 100%;
     height: auto;
   }
-  #progressDesigns {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+
+  /* Slideshow container */
+  .slideshow-container {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+  }
+
+  /* Hide the images by default */
+  .mySlides {
+    display: none;
+  }
+
+  /* Next & previous buttons */
+  .prev,
+  .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+
+  /* Position the "next button" to the right */
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+
+  /* On hover, add a black background color with a little bit see-through */
+  .prev:hover,
+  .next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+
+  /* Caption text */
+  .text {
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+  }
+
+  /* Number text (1/3 etc) */
+  .numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+  }
+
+  /* The dots/bullets/indicators */
+  .dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+
+  .active,
+  .dot:hover {
+    background-color: #717171;
+  }
+
+  /* Fading animation */
+  .fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+
+  @keyframes fade {
+    from {
+      opacity: 0.4;
+    }
+    to {
+      opacity: 1;
+    }
   }
   footer {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    width: 100vw;
     background-color: #000000;
     padding-top: 3%;
     padding-bottom: 3%;
   }
+  footer h1 {
+    font-size: 50px;
+    font-family: linotype-didot-headline, serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  footer p {
+    text-align: center;
+  }
+  footer h1 a {
+    color: white;
+  }
+
   footer p a {
     color: #ffffff;
     text-decoration: none;
   }
   footer p a:hover {
     text-decoration: underline;
-  }
-  #footerLogo {
-    max-width: 70vw;
-    width: 100%;
-    height: auto;
   }
 }
 @media (min-width: 768px) {
@@ -92,31 +204,47 @@
     max-width: 100%;
     width: 100%;
     overflow-x: hidden !important;
+    box-sizing: border-box;
   }
-
-  #logo {
-    max-width: 35vw;
-    width: 100%;
-    height: auto;
+  h1 {
+    font-size: 50px;
+    font-family: linotype-didot-headline, serif;
+    font-weight: 400;
+    font-style: normal;
+    margin: 0;
+  }
+  h1 a {
+    color: black;
+    text-decoration: none;
+  }
+  h2 {
+    font-size: 40px;
+    font-family: linotype-didot-headline, serif;
+    font-weight: 400;
+    font-style: normal;
+    margin: 0;
+    text-decoration: underline;
+  }
+  h3 {
+    font-family: linotype-didot-headline, serif;
+    font-weight: 400;
+    font-style: normal;
   }
   nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid black;
+  }
+  #introDiv {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-  }
-  #introDiv {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    height: 100vh;
+    margin-top: 2%;
   }
 
-  #introDiv p,
-  #introDiv li {
-    width: 45vw;
-    font-family: "Bodoni Moda", serif;
-  }
   p,
   li {
     width: 65vw;
@@ -128,49 +256,119 @@
     justify-content: space-evenly;
     align-items: flex-start;
   }
+  .ninetyVw {
+    max-width: 90vw;
+    width: 100%;
+    height: auto;
+  }
   .largeMockup {
-    max-width: 80vw;
+    max-width: 75vw;
     width: 100%;
     height: auto;
     border: 5px solid black;
     border-radius: 10px;
   }
-  .empathyMap {
-    width: 60vw;
-  }
+
   .standard {
     width: 70vw;
   }
   .smallMockup {
-    max-width: 40vw;
+    max-width: 45vw;
     width: 100%;
     height: auto;
     border: 5px solid black;
     border-radius: 10px;
     margin: 1%;
   }
+  .fortyVw {
+    max-width: 40vw;
+    width: 100%;
+    height: auto;
+    border: 5px solid black;
+    border-radius: 10px;
+  }
   .design {
     width: 90vw;
   }
-  .sectionTitle {
-    max-width: 27vw;
-    width: 100%;
-    height: auto;
-  }
   #brandResearch,
   #userResearch,
-  #uiDesign {
+  #uiDesign,
+  #finalDesigns {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
   }
-  #personasContainer {
-    position: relative;
-    margin: 0;
+  #otherInterfaces {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
   }
-  .userDot {
+  /* Slideshow container */
+  .slideshow-container {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+  }
+
+  /* Hide the images by default */
+  .mySlides {
+    display: none;
+  }
+
+  /* Next & previous buttons */
+  .prev,
+  .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+
+  /* Position the "next button" to the right */
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+
+  /* On hover, add a black background color with a little bit see-through */
+  .prev:hover,
+  .next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+
+  /* Caption text */
+  .text {
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
     text-align: center;
+  }
+
+  /* Number text (1/3 etc) */
+  .numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+  }
+
+  /* The dots/bullets/indicators */
+  .dot {
     cursor: pointer;
     height: 15px;
     width: 15px;
@@ -178,49 +376,20 @@
     background-color: #bbb;
     border-radius: 50%;
     display: inline-block;
-    text-align: center;
     transition: background-color 0.6s ease;
   }
-  .userBackBtn,
-  .userNextBtn,
-  .mockupBackBtn,
-  .mockupNextBtn {
-    cursor: pointer;
-    position: absolute;
-    top: 50%;
-    width: auto;
-    margin-top: -22px;
-    padding: 16px;
-    color: #ed6b60;
-    font-weight: bold;
-    font-size: 40px;
-    transition: 0.6s ease;
-    border-radius: 0 3px 3px 0;
-    user-select: none;
-  }
-  .userNextBtn,
-  .mockupNextBtn {
-    right: 0;
-    border-radius: 3px 0 0 3px;
-  }
+
   .active,
-  .userDot:hover {
+  .dot:hover {
     background-color: #717171;
   }
+
+  /* Fading animation */
   .fade {
-    -webkit-animation-name: fade;
-    -webkit-animation-duration: 1.5s;
     animation-name: fade;
     animation-duration: 1.5s;
   }
-  @-webkit-keyframes fade {
-    from {
-      opacity: 0.4;
-    }
-    to {
-      opacity: 1;
-    }
-  }
+
   @keyframes fade {
     from {
       opacity: 0.4;
@@ -229,18 +398,13 @@
       opacity: 1;
     }
   }
-  .userSlide {
-    display: none;
-  }
   footer {
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: space-between;
     align-items: center;
     background-color: #000000;
-    max-width: 100%;
-    width: 100%;
-    height: auto;
+    width: 100vw;
     padding-top: 3%;
     padding-bottom: 3%;
   }
@@ -251,9 +415,13 @@
   footer p a:hover {
     text-decoration: underline;
   }
-  #footerLogo {
-    max-width: 40vw;
-    width: 100%;
-    height: auto;
+  footer h1 {
+    font-size: 50px;
+    font-family: linotype-didot-headline, serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  footer h1 a {
+    color: white;
   }
 }

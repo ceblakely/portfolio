@@ -1,32 +1,25 @@
 let slideIndex = 1;
-showSlides(document.getElementsByClassName("userSlide"), slideIndex);
-showSlides(document.getElementsByClassName("mockupSlide"), slideIndex);
+showSlides(slideIndex);
 
-function whichSlideshow(parentId) {
-  if (parentId == "mockupsContainer") {
-    return document.getElementsByClassName("mockupSlide");
-  } else {
-    return document.getElementsByClassName("userSlide");
-  }
+// Next/previous controls
+function plusSlides(n) {
+  showSlides((slideIndex += n));
 }
 
-function plusSlides(e, n) {
-  let slideshow = whichSlideshow(e.parentNode.id);
-  showSlides(slideshow, (slideIndex += n));
-}
-function currentSlide(e, n) {
-  let slideshow = whichSlideshow(e.parentNode.id);
+// Thumbnail image controls
+function currentSlide(n) {
   showSlides((slideIndex = n));
 }
-function showSlides(slideshow, n) {
+
+function showSlides(n) {
   let i;
-  let slides = slideshow;
-  let dots = document.getElementsByClassName("userDot");
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
   if (n > slides.length) {
     slideIndex = 1;
   }
   if (n < 1) {
-    slideIndex = slide.length;
+    slideIndex = slides.length;
   }
   for (i = 0; i < slides.length; i++) {
     slides[i].style.display = "none";

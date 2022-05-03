@@ -2,10 +2,58 @@
   body {
     margin: 0;
     padding: 0;
+    max-width: 100%;
+    width: 100%;
     overflow-x: hidden !important;
   }
-  #logo {
-    max-width: 90vw;
+  h1 {
+    font-family: bely-display, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 50px;
+    margin: 0;
+    color: #000000;
+  }
+  h2 {
+    font-family: bely-display, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    margin: 0;
+    font-size: 50px;
+  }
+  h3 {
+    font-family: bely-display, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    margin: 0;
+    font-size: 23px;
+  }
+  #topBar {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 2px solid black;
+    background-color: #91282f;
+  }
+  #introDiv {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+    background-color: #e0d6cc;
+    padding-top: 1%;
+    width: 100vw;
+  }
+  #introText h3 {
+    font-family: "Bodoni Moda", serif;
+    font-size: 19px;
+    width: 85vw;
+    margin: 0;
+    text-align: center;
+  }
+  .introIcon {
+    max-width: 100vw;
     width: 100%;
     height: auto;
   }
@@ -14,104 +62,97 @@
     flex-direction: row;
     justify-content: center;
     align-items: center;
+    padding-top: 1%;
+    padding-bottom: 1%;
   }
   #links img {
     height: 5vh;
     padding: 0.5%;
-  }
-  #introDiv {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding-top: 5%;
-  }
-  #introCol {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    align-items: center;
-  }
-  #introCol h3 {
-    font-family: "Bodoni Moda", serif;
-    width: 70vw;
-  }
-
-  #servicesImg {
-    max-width: 90vw;
-    width: 100%;
-    height: auto;
-    padding: 2%;
   }
   #projectsDiv {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: #c2efb3;
+    background-color: #935b4d;
     border: 2px solid black;
-  }
-  #projectsRow1 img {
-    max-width: 60vw;
+    max-width: 100%;
     width: 100%;
     height: auto;
   }
-  figcaption {
-    text-align: center;
+  #projectsRow {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  #projectsRow img {
+    max-width: 90vw;
+    width: 100%;
+    height: auto;
   }
   #processDiv {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-  }
-  #processDiv div img {
-    max-width: 22vw;
+    max-width: 100%;
     width: 100%;
     height: auto;
-    padding: 0;
-    margin: 0;
-  }
-  #introDiv h3 {
-    font-family: "Bodoni Moda", serif;
-    text-align: center;
-    width: 75vw;
-  }
-  #processDiv p,
-  #contactDiv p {
-    font-family: "Bodoni Moda", serif;
-    margin-left: 0;
-    width: 80vw;
-  }
-  #contactDiv {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background-color: #a4133c;
-    border: 2px solid black;
     padding-bottom: 3%;
+    background-color: #e0d6cc;
   }
-  button {
-    padding: 1%;
+  #processDiv h2 {
+    padding-bottom: 10%;
+  }
+  figcaption {
+    text-align: center;
+    font-family: "Bodoni Moda", serif;
+    font-size: 19px;
   }
   figcaption a,
   button a {
-    color: #0000ee;
+    color: #000000;
     text-decoration: none;
   }
   figcaption a:hover,
   button a:hover {
     text-decoration: underline;
   }
+  #contactDiv {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #b6d4db;
+    border: 2px solid black;
+    max-width: 100%;
+    width: 100%;
+    height: auto;
+    padding-bottom: 3%;
+  }
+  #processDiv p,
+  #contactDiv p {
+    font-family: "Bodoni Moda", serif;
+    margin-left: 0;
+    width: 80vw;
+    font-size: 20px;
+  }
   footer {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: #eacdb7;
+    background-color: #000000;
+    max-width: 100%;
+    width: 100%;
+    height: auto;
     padding-top: 3%;
     padding-bottom: 3%;
+  }
+  footer h1 a {
+    color: #91282f;
+    text-decoration: none;
   }
   footer p a {
     color: #ffffff;
@@ -119,18 +160,6 @@
   }
   footer p a:hover {
     text-decoration: underline;
-  }
-  #footerLogo {
-    max-width: 70vw;
-    width: 100%;
-    height: auto;
-  }
-  .titleImg {
-    max-width: 40vw;
-    width: 100%;
-    height: auto;
-    padding-top: 3%;
-    padding-bottom: 3%;
   }
 }
 @media (min-width: 768px) {
@@ -141,15 +170,46 @@
     width: 100%;
     overflow-x: hidden !important;
   }
+  h1 {
+    font-family: bely-display, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 60px;
+    margin: 0;
+    color: #000000;
+  }
+  h2 {
+    font-family: bely-display, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    margin: 0;
+    font-size: 50px;
+  }
+  h3 {
+    font-family: bely-display, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    margin: 0;
+    font-size: 27px;
+  }
   #introDiv {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    background-color: #e0d6cc;
     padding-top: 1%;
   }
-  #logo {
-    max-width: 70vw;
+  #topBar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    border-bottom: 2px solid black;
+    background-color: #91282f;
+  }
+  .introIcon {
+    max-width: 80vw;
     width: 100%;
     height: auto;
   }
@@ -166,42 +226,31 @@
     padding: 0.5%;
   }
 
-  #introCol {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-  #introCol h3 {
+  #introText h3 {
     font-family: "Bodoni Moda", serif;
     font-size: 21px;
-    width: 70vw;
+    width: 85vw;
     margin: 0;
-  }
-  #servicesImg {
-    max-width: 60vw;
-    width: 100%;
-    height: auto;
   }
   #projectsDiv {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: #c2efb3;
+    background-color: #935b4d;
     border: 2px solid black;
     max-width: 100%;
     width: 100%;
     height: auto;
   }
-  #projectsRow1 {
+  #projectsRow {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
     align-items: center;
   }
-  #projectsRow1 img {
-    max-width: 40vw;
+  #projectsRow img {
+    max-width: 30vw;
     width: 100%;
     height: auto;
   }
@@ -214,32 +263,21 @@
     width: 100%;
     height: auto;
     padding-bottom: 3%;
-  }
-  #processDiv div img {
-    max-width: 27vw;
-    width: 100%;
-    height: auto;
-    padding-top: 3%;
-  }
-
-  #introDiv p {
-    font-family: "Bodoni Moda", serif;
-    width: 60%;
-    margin: 0;
-    text-align: center;
+    background-color: #e0d6cc;
   }
   #processDiv p,
   #contactDiv p {
     font-family: "Bodoni Moda", serif;
     margin-left: 0;
     width: 80vw;
+    font-size: 20px;
   }
   #contactDiv {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: #a4133c;
+    background-color: #b6d4db;
     border: 2px solid black;
     max-width: 100%;
     width: 100%;
@@ -248,13 +286,17 @@
   }
   button {
     padding: 1%;
+    border-radius: 15px;
+    border: 1px solid black;
   }
   figcaption {
     text-align: center;
+    font-family: "Bodoni Moda", serif;
+    font-size: 19px;
   }
   figcaption a,
   button a {
-    color: #0000ee;
+    color: #000000;
     text-decoration: none;
   }
   figcaption a:hover,
@@ -266,12 +308,16 @@
     flex-direction: row;
     justify-content: space-evenly;
     align-items: center;
-    background-color: #0d0628;
-    max-width: 100%;
-    width: 100%;
+    background-color: #000000;
+    max-width: 100vw;
+    width: 100vw;
     height: auto;
     padding-top: 3%;
     padding-bottom: 3%;
+  }
+  footer h1 a {
+    color: #91282f;
+    text-decoration: none;
   }
   footer p a {
     color: #ffffff;
@@ -279,17 +325,5 @@
   }
   footer p a:hover {
     text-decoration: underline;
-  }
-  #footerLogo {
-    max-width: 40vw;
-    width: 100%;
-    height: auto;
-  }
-  .titleImg {
-    max-width: 40vw;
-    width: 100%;
-    height: auto;
-    padding-top: 3%;
-    padding-bottom: 1%;
   }
 }

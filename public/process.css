@@ -39,7 +39,8 @@
   #brandResearch,
   #userResearch,
   #uiDesign,
-  #progressDesigns {
+  #progressDesigns,
+  #finalDesktop {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -309,7 +310,8 @@
   #brandResearch,
   #userResearch,
   #uiDesign,
-  #finalDesigns {
+  #finalDesigns,
+  #finalDesktop {
     display: flex;
     flex-direction: column;
     justify-content: center;

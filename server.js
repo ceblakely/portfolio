@@ -11,6 +11,9 @@ app.use(express.static(path.join(__dirname, "static")));
 app.get("/", (req, res) => {
   res.render("home");
 });
+app.get("/skullcandy", (req, res) => {
+  res.render("skullcandy");
+});
 app.get("/cuup", (req, res) => {
   res.render("cuup");
 });

@@ -178,49 +178,47 @@
     overflow-x: hidden !important;
   }
   h1 {
-    font-family: bely-display, sans-serif;
-    font-weight: 300;
+    font-family: sybarite, serif;
+    font-weight: 800;
     font-style: normal;
-    font-size: 60px;
+    font-size: 70px;
     margin: 0;
+    text-align: center;
   }
   h1 a {
     color: #151515;
     text-decoration: none;
   }
   h2 {
-    font-family: bely-display, sans-serif;
-    font-weight: 400;
+    font-family: sybarite, serif;
+    font-weight: 800;
     font-style: normal;
     margin: 0;
     font-size: 50px;
     padding-top: 2%;
   }
   h3 {
-    font-family: bely-display, sans-serif;
-    font-weight: 400;
+    font-family: sybarite, serif;
+    font-weight: 800;
     font-style: normal;
     margin: 0;
     font-size: 27px;
+  }
+  #topBar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
   }
   #introDiv {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: #c7ccdb;
+    background-color: #ebebeb;
     padding-top: 1%;
   }
-  #topBar {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
-    border-bottom: 2px solid black;
-    background-color: #ba79f9;
-    /*background-color: #93637b;*/
-    /* background-color: #91282f; */
-  }
+
   .introIcon {
     max-width: 65vw;
     width: 100%;
@@ -251,23 +249,24 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: #bbbefe;
-    border: 2px solid black;
     max-width: 100%;
     width: 100%;
     height: auto;
   }
-  #projectsRow {
+  #projectsRow1 {
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: center;
     align-items: center;
   }
-  #projectsRow img {
-    max-width: 30vw;
+  #projectsDiv img {
+    max-width: 45vw;
     width: 100%;
     height: auto;
+    border-top: 2px solid black;
+    padding-top: 5%;
   }
+
   #processDiv {
     display: flex;
     flex-direction: column;
@@ -291,7 +290,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: #d7bbf4;
+    background-color: #d2b050;
     border: 2px solid black;
     max-width: 100%;
     width: 100%;
@@ -330,7 +329,7 @@
     padding-bottom: 3%;
   }
   footer h1 a {
-    color: #ba79f9;
+    color: #c17789;
     text-decoration: none;
   }
   footer p a {

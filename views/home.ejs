@@ -7,13 +7,18 @@
     href="https://fonts.googleapis.com/css2?family=Bodoni+Moda&display=swap"
     rel="stylesheet"
   />
+  <link rel="stylesheet" href="https://use.typekit.net/pcp3nqd.css" />
   <link rel="stylesheet" href="https://use.typekit.net/oui6ruy.css" />
   <link rel="stylesheet" href="https://use.typekit.net/pcp3nqd.css" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
 </head>
 <body>
-  <%- include('../partials/intro.ejs') %> <%-
-  include('../partials/projects.ejs') %> <%- include('../partials/process.ejs')
-  %> <%- include('../partials/contact.ejs'); %> <%-
+  <div id="topBar">
+    <h1><a href="/">Blakely Digital</a></h1>
+    <h3>Web Design & Brand Identity Studio</h3>
+  </div>
+  <%- include('../partials/projects.ejs') %> <%-
+  include('../partials/intro.ejs') %> <%- include('../partials/process.ejs') %>
+  <%- include('../partials/contact.ejs'); %> <%-
   include('../partials/footer.ejs') %>
 </body>

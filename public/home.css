@@ -59,18 +59,6 @@
     margin: 0;
     text-align: center;
   }
-  /*
-  #introDiv p {
-    font-family: minion-pro, serif;
-    font-weight: 400;
-    font-style: normal;
-    font-size: 18px;
-    line-height: 30px;
-    text-align: center;
-    padding-left: 10%;
-    padding-right: 10%;
-  } */
-
   #links {
     display: flex;
     flex-direction: row;
@@ -193,7 +181,7 @@
     text-align: center;
   }
   h1 a {
-    color: #151515;
+    color: #000000;
     text-decoration: none;
   }
   #topBar h2 {

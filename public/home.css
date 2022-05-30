@@ -10,7 +10,7 @@
     font-family: sybarite, serif;
     font-weight: 800;
     font-style: normal;
-    font-size: 30px;
+    font-size: 35px;
     margin: 0;
     color: #000000;
   }
@@ -31,7 +31,8 @@
     font-weight: 800;
     font-style: normal;
     margin: 0;
-    font-size: 20px;
+    font-size: 23px;
+    text-align: center;
   }
   #topBar {
     display: flex;
@@ -40,6 +41,14 @@
     align-items: center;
     background-color: #b547aa;
     padding: 2%;
+  }
+  #topBar h3 {
+    font-family: sybarite, serif;
+    font-weight: 800;
+    font-style: normal;
+    margin: 0;
+    font-size: 18px;
+    text-align: center;
   }
   #introDiv {
     display: flex;
@@ -50,13 +59,22 @@
     padding-top: 4%;
     width: 100vw;
   }
-  #introText h3 {
+  #introText h2 {
+    font-family: sybarite, serif;
+    font-weight: 800;
+    font-style: normal;
+    font-size: 30px;
+    width: 90vw;
+    margin: 0;
+    text-align: center;
+  }
+  #introText p {
     font-family: minion-pro, serif;
     font-weight: 400;
     font-style: normal;
-    font-size: 19px;
-    width: 85vw;
-    margin: 0;
+    font-size: 20px;
+    width: 90vw;
+    line-height: 30px;
     text-align: center;
   }
   #links {
@@ -87,8 +105,11 @@
     justify-content: space-evenly;
     align-items: center;
   }
+  #projectsDiv figure {
+    border-top: 2px solid black;
+  }
   #projectsDiv img {
-    max-width: 85vw;
+    max-width: 90vw;
     width: 100%;
     height: auto;
   }
@@ -116,9 +137,12 @@
     width: 100%;
     height: auto;
     padding-bottom: 3%;
+    border-top: 5px solid #cb5435;
+    border-bottom: 5px solid #cb5435;
   }
   #processDiv h2 {
-    padding-bottom: 10%;
+    text-align: center;
+    padding-bottom: 3%;
   }
   p {
     font-family: minion-pro, serif;
@@ -127,6 +151,7 @@
     margin-left: 0;
     width: 85vw;
     font-size: 20px;
+    text-align: center;
   }
   #contactDiv {
     display: flex;
@@ -139,7 +164,21 @@
     height: auto;
     padding-bottom: 3%;
   }
-
+  button {
+    font-family: minion-pro, serif;
+    font-weight: 400;
+    font-style: normal;
+    padding: 1%;
+    border-radius: 5%;
+    border: 2.5px solid #cb5435;
+  }
+  button a {
+    color: #000000;
+    text-decoration: none;
+  }
+  button a:hover {
+    font-style: italic;
+  }
   footer {
     display: flex;
     flex-direction: column;
@@ -156,12 +195,16 @@
     color: #000000;
     text-decoration: none;
   }
+  footer p {
+    margin: 0;
+    padding-top: 0.5%;
+  }
   footer p a {
     color: #000000;
     text-decoration: none;
   }
   footer p a:hover {
-    text-decoration: underline;
+    font-style: italic;
   }
 }
 @media (min-width: 768px) {
@@ -184,13 +227,12 @@
     color: #000000;
     text-decoration: none;
   }
-  #topBar h2 {
+  #topBar h3 {
     font-family: sybarite, serif;
     font-weight: 800;
     font-style: normal;
     margin: 0;
-    font-size: 30px;
-    padding-top: 2%;
+    font-size: 27px;
   }
   h2 {
     font-family: sybarite, serif;
@@ -198,6 +240,7 @@
     font-style: normal;
     font-size: 40px;
     text-align: center;
+    padding-top: 2%;
   }
   h3 {
     font-family: sybarite, serif;
@@ -334,9 +377,19 @@
     padding-right: 20%;
   }
   button {
+    font-family: minion-pro, serif;
+    font-weight: 400;
+    font-style: normal;
     padding: 1%;
-    border-radius: 15px;
-    border: 1px solid black;
+    border-radius: 5%;
+    border: 2.5px solid #cb5435;
+  }
+  button a {
+    color: #000000;
+    text-decoration: none;
+  }
+  button a:hover {
+    font-style: italic;
   }
   footer {
     display: flex;
@@ -365,6 +418,6 @@
     text-decoration: none;
   }
   footer p a:hover {
-    text-decoration: underline;
+    font-style: italic;
   }
 }

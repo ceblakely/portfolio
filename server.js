@@ -17,7 +17,9 @@ app.get("/skullcandy", (req, res) => {
 app.get("/cuup", (req, res) => {
   res.render("cuup");
 });
-
+app.get("/alittlewhitechapel", (req, res) => {
+  res.render("alwc");
+});
 app.get("/dvsty", (req, res) => {
   res.render("dvsty");
 });

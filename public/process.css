@@ -120,20 +120,29 @@
     padding-top: 3%;
     padding-bottom: 3%;
   }
+  #footerLinks {
+    display: flex;
+    flex-direction: row;
+  }
   footer h1 a {
-    color: #000000;
+    color: #d0ffd6;
     text-decoration: none;
   }
-  footer p {
-    margin: 0;
-    padding-top: 0.5%;
+  footer h6 {
+    font-family: minion-pro, serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 17px;
     text-align: center;
+    padding-left: 2%;
+    padding-right: 2%;
+    margin-top: 10%;
   }
-  footer p a {
-    color: #000000;
+  footer h6 a {
+    color: #d0ffd6;
     text-decoration: none;
   }
-  footer p a:hover {
+  footer h6 a:hover {
     font-style: italic;
   }
 }
@@ -192,8 +201,8 @@
   }
   #topBar {
     display: flex;
-    flex-direction: row;
-    justify-content: space-around;
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
     background-color: #d0ffd6;
     padding: 1.5%;
@@ -259,7 +268,7 @@
     margin-top: 1%;
   }
   .largeMockup {
-    max-width: 75vw;
+    max-width: 55vw;
     width: 100%;
     height: auto;
     border: 5px solid black;
@@ -283,7 +292,7 @@
   }
   footer {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     background-color: #000000;
@@ -293,25 +302,27 @@
     padding-top: 3%;
     padding-bottom: 3%;
   }
-  footer h1 {
-    width: 100%;
-    white-space: nowrap;
+  #footerLinks {
+    display: flex;
+    flex-direction: row;
   }
   footer h1 a {
     color: #d0ffd6;
     text-decoration: none;
   }
-  footer p {
+  footer h6 {
     font-family: minion-pro, serif;
     font-weight: 400;
     font-style: normal;
-    text-align: center;
+    font-size: 20px;
+    padding-left: 2%;
+    padding-right: 2%;
   }
-  footer p a {
+  footer h6 a {
     color: #d0ffd6;
     text-decoration: none;
   }
-  footer p a:hover {
+  footer h6 a:hover {
     font-style: italic;
   }
 }
